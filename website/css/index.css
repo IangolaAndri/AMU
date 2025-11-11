@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --- Palette & variables --- */
+:root {
+    --main-beige: #FFF4EC;
+    --card-beige: #FFF8F1;
+    --soft-red: #B52435;
+    --soft-green: #6b8e65;
+    --udem-blue: #002d62;
+}
+
+/* --- Global styles --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--main-beige);
+    color: #222;
+    line-height: 1.6;
+}
+
+/* --- Navbar --- */
+header {
+    background-color: var(--main-beige);
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+/* Menu */
+nav .menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: var(--udem-blue);
+    font-weight: 500;
+    position: relative;
+    padding: 6px 0;
+    transition: color 0.3s;
+}
+
+nav .menu li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--soft-red);
+    transition: width 0.3s ease;
+}
+nav .menu li a:hover::after,
+nav .menu li a.active::after {
+    width: 100%;
+}
+
+nav .menu li a:hover,
+nav .menu li a.active {
+    color: var(--soft-red);
+}
+
+/* Language button */
+nav .lang a {
+    display: inline-block; 
+    padding: 6px 14px;
+    border-radius: 6px;
+    background-color: var(--udem-blue);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+nav .lang a:hover {
+    background-color: var(--soft-red);
+    transform: translateY(-2px);
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    nav .lang {
+        margin-top: 12px;
+    }
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: var(--main-beige);
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    color: var(--soft-red);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.15em;
+    color: #333;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* --- Info Sections (Mission / Objectifs) --- */
+.info-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 60px 20px;
+    align-items: center;
+}
+
+.info-sections .card {
+    background-color: var(--card-beige);
+    border-radius: 14px;
+    padding: 35px 30px;
+    max-width: 900px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-sections .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.info-sections h2 {
+    color: var(--soft-red);
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.info-sections h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 60px;
+    height: 3px;
+    background-color: var(--soft-red);
+    border-radius: 3px;
+}
+
+/* --- Photos Section --- */
+.photos {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--main-beige);
+}
+
+.photos h2 {
+    color: var(--soft-red);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.photos .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.photos .gallery img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.photos .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.more-images {
+    margin-top: 25px;
+}
+
+a.button {
+    display: inline-block;
+    background-color: var(--soft-red);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+a.button:hover {
+    background-color: var(--soft-green);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--main-beige);
+    color: var(--soft-green);
+    font-size: 0.95em;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+footer a {
+    color: var(--soft-red);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
