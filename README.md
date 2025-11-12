@@ -19,13 +19,23 @@ website/
 │
 ├─ assets/ # Images et logos
 ├─ css/ # Fichiers CSS pour le style
-│ └─ style.css
-├─ js/ # (Optionnel) fichiers JavaScript
-├─ index.html # Page d’accueil
-├─ equipe.html # Présentation de l’équipe
-├─ ressources.html # Page de ressources
-├─ evenements.html # Page des événements
-├─ contact.html # Page contact
+│ └─ index.css
+│ └─ evenements.css
+│ └─ contact.css
+│ └─ equipe.css
+│ └─ ressources.css
+├─ fr/ # Fichiers HTML en français
+├─ └─ index.html # Page d’accueil
+├─ └─ equipe.html # Présentation de l’équipe
+├─ └─ ressources.html # Page de ressources
+├─ └─ evenements.html # Page des événements
+├─ └─ contact.html # Page contact
+├─ en/ # Fichiers HTML en anglais
+├─ └─ index.html # Page d’accueil
+├─ └─ team.html # Présentation de l’équipe
+├─ └─ ressources.html # Page de ressources
+├─ └─ events.html # Page des événements
+├─ └─ contact.html # Page contact
 └─ README.md # Ce fichier
 ```
 
