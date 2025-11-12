@@ -45,10 +45,10 @@ website/
 ## Fonctionnement du site
 
 1. **Pages HTML**  
-   Chaque page correspond à un fichier HTML séparé (`index.html`, `equipe.html`, etc.), lié à un fichier CSS commun pour le style et éventuellement à des scripts JavaScript pour des fonctionnalités supplémentaires.
+   Chaque page correspond à un fichier HTML séparé (`index.html`, `equipe.html`, etc.), lié à des fichier CSS (commun entre les versions française et anglaise) pour le style.
 
 2. **CSS**  
-   Le fichier `style.css` contient tout le style du site (couleurs, typographie, mise en page, responsive design).
+   Les fichiers CSS contiennent tout le style du site (couleurs, typographie, mise en page, responsive design).
 
 3. **Assets**  
    Le dossier `assets/` contient toutes les images et logos utilisés sur le site.
@@ -74,15 +74,15 @@ Pour les futurs membres ou responsables qui reprendront le site :
 
 1. **Accès au dépôt GitHub**
    - Assurez-vous d’avoir un compte GitHub.
-   - Demandez l’accès au dépôt du site à l’association.
-   - Clonez le dépôt sur votre machine :  
+   - Cloner ou télécharger le projet complet.  
+   - Pour clonez le dépôt sur votre machine :  
      ```bash
      git clone https://github.com/<username>/amu-website.git
      ```
 
 2. **Modification du site**
    - Les pages HTML peuvent être éditées avec n’importe quel éditeur de texte ou IDE.
-   - Le style est centralisé dans `css/style.css`.
+   - Le style est centralisé dans `css/`.
    - Les images et logos sont dans `assets/`.
 
 3. **Mise à jour en ligne**
@@ -96,7 +96,7 @@ Pour les futurs membres ou responsables qui reprendront le site :
 
 4. **Connexion au domaine AMU**
    - Les réglages DNS pour le domaine sont déjà configurés.
-   - En cas de transfert à un nouveau responsable, il faudra s’assurer que le domaine pointe toujours vers GitHub Pages.
+   - En cas de transfert à un nouveau responsable, il faudra s’assurer que le domaine pointe toujours vers GitHub Pages et qu'il soit toujours à jour. .
 
 ---
 
