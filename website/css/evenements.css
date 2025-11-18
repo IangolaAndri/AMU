@@ -111,7 +111,7 @@ nav .lang a:hover {
     }
 
     .logo img {
-        height: 45px !important;   /* Forces smaller logo */
+        height: 80px !important;   /* Forces smaller logo */
     }
 
     nav .menu {
