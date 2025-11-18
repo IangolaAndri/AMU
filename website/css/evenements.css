@@ -103,22 +103,23 @@ nav .lang a:hover {
     transform: translateY(-2px);
 }
 
-/* Mobile navbar optimization */
-@media (max-width: 600px) {
+/* FORCE small navbar on mobile */
+@media (max-width: 768px) {
+
     header {
-        padding: 8px 12px;
+        padding: 6px 10px !important;
     }
 
     .logo img {
-        height: 45px;  /* Much smaller logo */
+        height: 45px !important;   /* Forces smaller logo */
     }
 
     nav .menu {
-        gap: 15px;
+        gap: 10px !important;
     }
 
-    nav .menu li a {
-        font-size: 14px;
+    nav {
+        flex-direction: column !important;
     }
 }
 
