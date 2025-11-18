@@ -6,7 +6,7 @@
   <title>Événements - Association Étudiante</title>
   <link rel="stylesheet" href="../css/evenements.css">
 </head>
-
+  
 <body>
   <header>
     <nav>
@@ -69,5 +69,23 @@
       <a href="https://www.facebook.com/profile.php?id=61564464208745" target="_blank" rel="noopener noreferrer">Facebook</a> · 
     </p>
   </footer>
+
+  <script>
+let lastScroll = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    const current = window.pageYOffset;
+
+    if (current > lastScroll) {
+        header.style.transform = "translateY(-100%)";
+    } else {
+        header.style.transform = "translateY(0)";
+    }
+
+    lastScroll = current;
+});
+</script>
+
 </body>
 </html>
