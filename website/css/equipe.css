@@ -18,9 +18,10 @@ body {
     color: var(--text-light);
 }
 
+
 /* --- Navbar --- */
 header {
-    background-color: #000;
+    background-color: #FFF4EC;
     padding: 15px 20px;
     box-shadow: 0 4px 10px rgba(255,255,255,0.08);
     position: sticky;
@@ -60,7 +61,7 @@ nav .menu {
 
 nav .menu li a {
     text-decoration: none;
-    color: var(--text-light);
+    color: #002d62;
     font-weight: 500;
     position: relative;
     padding: 6px 0;
