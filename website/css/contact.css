@@ -103,21 +103,21 @@ nav .lang a:hover {
 
 /* Responsive menu */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  nav .menu {
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
-    margin-top: 12px;
-  }
+    nav .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin-top: 12px;
+    }
 
-  nav .lang {
-    margin-top: 12px;
-  }
+    nav .lang {
+        margin-top: 12px;
+    }
 }
 
 /* --- Intro Section --- */
