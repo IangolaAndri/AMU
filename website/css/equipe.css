@@ -21,7 +21,7 @@ body {
 
 /* --- Navbar --- */
 header {
-    background-color: linear-gradient(90deg, #0d0d0d, #002d62);
+    background-color: black;
     padding: 15px 20px;
     box-shadow: 0 4px 10px rgba(255,255,255,0.08);
     position: sticky;
