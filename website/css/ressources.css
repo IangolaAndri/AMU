@@ -4,7 +4,9 @@
     --main-beige: #FFF4EC;
     --card-beige: #FFF8F1;
     --soft-red: #B52435;
-    --soft-green: #6b8e65;
+    /* --soft-green: #6b8e65; */
+    --soft-green: #587454;
+    --card-green: #9BAF94;
     --udem-blue: #002d62;
 }
 
@@ -148,7 +150,7 @@ nav .lang a:hover {
 }
 
 .resources-list .card {
-    background-color: var(--card-beige);
+    background-color: var(--card-green);
     border-radius: 12px;
     padding: 25px 20px;
     width: 300px;
@@ -193,7 +195,7 @@ nav .lang a:hover {
 
 .resources-list ul li a {
     text-decoration: none;
-    color: var(--udem-blue);
+    color: #FFF8F0;
     transition: 0.3s;
 }
 
@@ -206,8 +208,8 @@ nav .lang a:hover {
 footer {
     text-align: center;
     padding: 25px;
-    background-color: var(--main-beige);
-    color: var(--soft-green);
+    background-color: var(--soft-green);
+    color: white;
     font-size: 0.95em;
     margin-top: 30px;
 }
