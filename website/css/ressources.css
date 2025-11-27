@@ -11,13 +11,13 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
-    background-color: var(--main-beige);
-    color: #222;
+    background-color: var(--soft-green);
+    color: white;
 }
 
 /* --- Navbar --- */
 header {
-    background-color: var(--main-beige);
+    background-color: var(--soft-green);
     padding: 15px 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     position: sticky;
@@ -58,7 +58,7 @@ nav .menu {
 
 nav .menu li a {
     text-decoration: none;
-    color: var(--udem-blue);
+    color: white;
     font-weight: 500;
     position: relative;
     padding: 6px 0;
