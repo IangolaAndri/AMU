@@ -188,6 +188,25 @@ nav .lang a:hover {
   border-radius: 2px;
 }
 
+/* --- Social Links Style --- */
+.social-links a,
+.card a,
+footer a {
+  color: var(--udem-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.social-links a:hover,
+.card a:hover,
+footer a:hover {
+  color: var(--soft-red);
+  text-decoration: none;
+  border-bottom: 2px solid var(--soft-red);
+  padding-bottom: 2px;
+}
+
 /* --- Form Style --- */
 .contact-form form {
   display: flex;
