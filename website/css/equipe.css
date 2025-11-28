@@ -134,6 +134,48 @@ nav .lang a:hover {
     margin-bottom: 15px;
 }
 
+.intro-video {
+    width: 100%;
+    max-width: 900px;       /* keeps video nicely sized on desktop */
+    display: block;
+    margin: 20px auto;      /* centers video */
+    border-radius: 10px;    /* looks nicer but optional */
+    object-fit: cover;
+  }
+  
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    line-height: 1.6;
+}
+  
+@media (max-width: 768px) {
+    .intro-video {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  
+    .intro-content {
+      padding: 10px 15px;
+      font-size: 0.95em;
+    }
+  
+    .intro h1 {
+      font-size: 1.8em;   /* avoid giant title on mobile */
+    }
+}
+  
+@media (max-width: 480px) {
+    .intro h1 {
+      font-size: 1.6em;
+    }
+  
+    .intro-content {
+      font-size: 0.9em;
+    }
+}
+
 /* Team Cards */
 .team-cards {
     display: flex;
