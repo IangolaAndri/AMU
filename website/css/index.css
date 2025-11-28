@@ -4,8 +4,8 @@
 :root {
     --main-beige: #FFF4EC;
     --card-beige: #FFF8F1;
-    --soft-red: #B52435;
-    --soft-green: #2F4A32;
+    --soft-red: #61060e; /*  #B52435; */
+    --soft-green: #2F4A32; /*  #2F4A32; */
     --udem-blue: #002d62;
 }
 
@@ -125,7 +125,6 @@ nav .lang a:hover {
 
 /* --- Hero Section --- */
 .hero {
-    background-color: var(--main-beige);
     text-align: center;
     padding: 80px 20px;
     max-width: 900px;
@@ -141,10 +140,33 @@ nav .lang a:hover {
 
 .hero p {
     font-size: 1.15em;
-    color: #333;
+    color: white;
     max-width: 750px;
     margin: 0 auto;
 }
+
+.hero-wrapper {
+    background-image: url("../assets/images/photo01.JPG");
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: var(--main-beige); /* blends underneath */
+}
+
+.hero-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35); /* 35% dark overlay */
+    z-index: 0;
+    border-radius: inherit;
+}
+
+.hero-wrapper * {
+    position: relative;
+    z-index: 1; /* keeps text ABOVE overlay */
+}
+
 
 /* --- Info Sections (Mission / Objectifs) --- */
 .info-sections {
