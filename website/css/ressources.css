@@ -14,7 +14,7 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     background-color: var(--soft-green);
-    color: var(--red);
+    color: white;
 }
 
 /* --- Navbar --- */
@@ -84,7 +84,7 @@ nav .menu li a.active::after {
 
 nav .menu li a:hover,
 nav .menu li a.active {
-    color: var(--red);
+    color: var(--soft-red);
 }
 
 /* Language button */
