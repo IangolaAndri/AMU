@@ -3,17 +3,18 @@
 :root {
     --main-beige: #FFF4EC;
     --card-beige: #FFF8F1;
-    --soft-red: #8E2C34;
+    --soft-red: #E2B84A; /* #8E2C34; */
     --soft-green: #2F4A32;
     --card-green: #436646;
     --udem-blue: #002d62;
+    --red : #61060e;
 }
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     background-color: var(--soft-green);
-    color: #E2B84A;
+    color: var(--red);
 }
 
 /* --- Navbar --- */
@@ -73,7 +74,7 @@ nav .menu li a::after {
     bottom: -2px;
     width: 0%;
     height: 2px;
-    background-color: var(--soft-red);
+    background-color: var(--red);
     transition: width 0.3s ease;
 }
 nav .menu li a:hover::after,
@@ -83,7 +84,7 @@ nav .menu li a.active::after {
 
 nav .menu li a:hover,
 nav .menu li a.active {
-    color: var(--soft-red);
+    color: var(--red);
 }
 
 /* Language button */
@@ -212,13 +213,13 @@ footer {
     text-align: center;
     padding: 25px;
     background-color: var(--soft-green);
-    color: #E2B84A;
+    color: black;
     font-size: 0.95em;
     margin-top: 30px;
 }
 
 footer a {
-    color: var(--soft-red);
+    color: var(--red);
     text-decoration: none;
 }
 
