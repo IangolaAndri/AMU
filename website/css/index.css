@@ -5,7 +5,7 @@
     --main-beige: #FFF4EC;
     --card-beige: #FFF8F1;
     --soft-red: #61060e; /*  #B52435; */
-    --soft-green: #2F4A32; /*  #2F4A32; */
+    --soft-green: #2dcd40; /*  #2F4A32; */
     --udem-blue: #002d62;
 }
 
@@ -133,9 +133,19 @@ nav .lang a:hover {
 
 .hero h1 {
     font-size: 2.8em;
-    color: var(--soft-red);
+    color: var(--soft-green);
     font-weight: 700;
     margin-bottom: 20px;
+}
+
+.hero h1 .sub1 {
+    font-family:cursive
+}
+
+.hero h1 .sub {
+    color: white; 
+    font-weight: 700;       
+    font-size: 0.8em;      
 }
 
 .hero p {
@@ -144,6 +154,7 @@ nav .lang a:hover {
     max-width: 750px;
     margin: 0 auto;
 }
+
 
 .hero-wrapper {
     background-image: url("../assets/images/photo01.JPG");
@@ -166,7 +177,6 @@ nav .lang a:hover {
     position: relative;
     z-index: 1; /* keeps text ABOVE overlay */
 }
-
 
 /* --- Info Sections (Mission / Objectifs) --- */
 .info-sections {
