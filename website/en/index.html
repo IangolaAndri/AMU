@@ -25,49 +25,60 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Akory aby — Here, Madagascar!</h1>
-    <h1>Malagasy Association of UdeM</h1>
-    <p>AMU is a community founded in August 2024, bringing together students from all academic levels, as well as Malagasy researchers and professors at the Université de Montréal.</p>
-</section>
+  <div class="hero-wrapper">
+    <section class="hero">
+      <h1>
+        <span class="sub1">Akory aby !</span>
+        <br>
+        <span class="sub">Malagasy Students Association of UdeM</span>
+      </h1>
+      <p>The AMU is a community founded in August 2024, bringing together students from ALL cycles, as well as Malagasy researchers and professors at the Université de Montréal.</p>
+    </section>
 
-<div class="info-sections">
+    <div class="info-sections">
 
-    <div class="card">
-      <h2>Our History</h2>
-      <p>Founded in August 2024, AMU was created with the goal of uniting students and members of the Malagasy community at the Université de Montréal. What began with a small, motivated group hoping to build a space for connection, support, and cultural exchange has since grown into a dynamic association. AMU continues to evolve thanks to the dedication of its members, while staying true to its mission: building a strong, inclusive community proud of its roots.</p>
+      <div class="card">
+        <h2>Ny Tantara (Our History)</h2>
+        <p>Created in August 2024, the AMU was born from a desire to bring together Malagasy students and community members at the Université de Montréal. It began with a small, motivated group who wanted to create a space for exchange, support, and cultural sharing. Since then, the association has grown thanks to the involvement of its members, while staying true to its mission: building a supportive, inclusive community proud of its roots.</p>
+      </div>
+
+      <div class="card">
+        <h2>Ny Lanja sy Iraka (Our Mission & Values)</h2>
+        <p>To create an environment where every member feels welcomed and supported. We value solidarity. AMU is a space for mutual aid, personal and academic growth, cultural sharing, and support for EVERYONE: students at UdeM or elsewhere, Malagasy or not.</p>
+      </div>
+
+      <div class="card">
+        <h2>Ny Tanjona (Our Goals)</h2>
+        We aim to:
+        <ul>
+          <li>facilitate student integration in academic and social life</li>
+          <li>share useful resources and services for everyday life</li>
+          <li>organize cultural and academic activities and events</li>
+        </ul>
+        Each initiative strengthens the sense of belonging and promotes Malagasy culture through a strong and supportive network.
+      </div>
+
     </div>
-
-    <div class="card">
-      <h2>Our Mission & Values</h2>
-      <p>Our mission is to create an environment where every member feels welcomed and supported. We value solidarity, respect, and openness, and we aim to promote personal and academic growth within our community. AMU is a place for mutual support, cultural exchange, and collective empowerment — open to students and non-students alike.</p>
-    </div>
-  
-    <div class="card">
-      <h2>Our Objectives</h2>
-      <p>We aim to facilitate integration into academic and social life, organize enriching cultural and academic activities, share helpful resources, and promote Malagasy culture in Montréal. Every initiative is designed to strengthen community belonging and build a supportive, friendly network.</p>
-    </div>
-
-</div>
+  </div>
 
   <section class="photos">
     <h2>Our Community in Pictures</h2>
     <div class="gallery">
-      <img src="../assets/images/photo01.JPG" alt="Event 1">
+      <img src="../assets/images/photo31.jpg" alt="Event 1">
       <img src="../assets/images/photo05.JPG" alt="Event 5">
       <img src="../assets/images/photo02.JPG" alt="Event 2">
       <img src="../assets/images/photo03.JPG" alt="Event 3">
-      <img src="../assets/images/photo04.JPG" alt="Event 4">
+      <img src="../assets/images/photo28.jpg" alt="Event 4">
     </div>
 
     <div class="more-images">
-      <a href="events.html" class="button">See more pictures here</a>
+      <a href="evenements.html#gallery-section" class="button">See more pictures here</a>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Malagasy Students Association at UdeM | Website by Iangola Andrianarison · 
-      <a href="contact.html">Contact</a> · 
+    <p>© 2025 Malagasy Students Association of UdeM | Website by Iangola Andrianarison
+      <a href="contact.html">Contact</a> | 
       <a href="https://www.instagram.com/amu.udem/" target="_blank" rel="noopener noreferrer">Instagram</a> · 
       <a href="https://www.linkedin.com/company/association-des-malagasy-de-l-udem" target="_blank" rel="noopener noreferrer">LinkedIn</a> · 
       <a href="https://www.facebook.com/profile.php?id=61564464208745" target="_blank" rel="noopener noreferrer">Facebook</a>
@@ -75,22 +86,21 @@
   </footer>
 
   <script>
-let lastScroll = 0;
-const header = document.querySelector("header");
+    let lastScroll = 0;
+    const header = document.querySelector("header");
 
-window.addEventListener("scroll", () => {
-    const current = window.pageYOffset;
+    window.addEventListener("scroll", () => {
+      const current = window.pageYOffset;
 
-    if (current > lastScroll) {
-        header.style.transform = "translateY(-100%)";
-    } else {
-        header.style.transform = "translateY(0)";
-    }
+      if (current > lastScroll) {
+          header.style.transform = "translateY(-100%)";
+      } else {
+          header.style.transform = "translateY(0)";
+      }
 
-    lastScroll = current;
-});
-</script>
-  
+      lastScroll = current;
+    });
+  </script>
+
 </body>
 </html>
-
