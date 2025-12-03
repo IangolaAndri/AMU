@@ -30,94 +30,135 @@
 
     <h2>Upcoming Events</h2>
     <ul>
-      <li><strong>Gift Exchange:</strong> December 26, 2025</li>
       <li style="margin-bottom: 14px; line-height: 1.6;">
-  <strong>Trip to Mont-Tremblant:</strong> December 27, 2025
-  <div style="margin-top: 6px;">
-    <span style="opacity: 0.85;">To register, click here:</span>
-    <a href="https://www.zeffy.com/fr-CA/ticketing/sortie-village-mont-tremblant" 
-       target="_blank" 
-       style="color:#002d62; font-weight:600; text-decoration:none;">
-      ➤ Registration Link
-    </a>
-  </div>
-</li>
-
-      <div style="margin-top: 10px; padding: 10px 12px; background:#FFF8F1; border-radius:8px;">
-    <span style="opacity: 0.85;">
-      To help us continue growing and creating fun events for you, you can support our association:
-    </span>
-    <a href="https://www.zeffy.com/fr-CA/donation-form/amu-ambition-et-solidarite" 
-       target="_blank" 
-       style="color:#B52435; font-weight:600; text-decoration:none; margin-left:4px;">
-      Make a Donation
-    </a>
-  </div>
-</li>
-
+        <strong>Trip to Mont-Tremblant:</strong> December 27, 2025
+        <div style="margin-top: 6px;">
+          <span style="opacity: 0.85;">Register here:</span>
+          <a href="https://www.zeffy.com/fr-CA/ticketing/sortie-village-mont-tremblant" 
+             target="_blank" 
+             style="color:#002d62; font-weight:600; text-decoration:none;">
+            ➤ Registration Link
+          </a>
+        </div>
+      </li>
+      <li><strong>Soccer World Cup:</strong> January 2026</li>
     </ul>
-    <p>For more info follow our social media pages <a href="contact.html">Contact</a></p>
+
+    <p>For more information, follow us on our social media or visit the <a href="contact.html">Contact</a> page.</p>
 
     <h2>Past Events</h2>
-     <div class="gallery">
-      <img src="../assets/images/photo01.JPG" alt="Événement 1">
-      <img src="../assets/images/photo02.JPG" alt="Événement 2">
-      <img src="../assets/images/photo03.JPG" alt="Événement 3">
-      <img src="../assets/images/photo04.JPG" alt="Événement 4">
-      <img src="../assets/images/photo05.JPG" alt="Événement 5">
-      <img src="../assets/images/photo06.JPG" alt="Événement 6">
-      <img src="../assets/images/photo07.JPG" alt="Événement 7">
-      <img src="../assets/images/photo08.JPG" alt="Événement 8">
-      <img src="../assets/images/photo09.jpg" alt="Événement 9">
-      <img src="../assets/images/photo10.JPG" alt="Événement 10">
-      <img src="../assets/images/photo11.jpg" alt="Événement 11">
-      <img src="../assets/images/photo12.JPG" alt="Événement 12">
-      <img src="../assets/images/photo13.JPG" alt="Événement 13">
-      <img src="../assets/images/photo14.JPG" alt="Événement 14">
-      <img src="../assets/images/photo15.jpg" alt="Événement 15">
-      <img src="../assets/images/photo16.jpg" alt="Événement 16">
-      <img src="../assets/images/photo17.jpg" alt="Événement 17">
-      <img src="../assets/images/photo18.jpg" alt="Événement 18">
-      <img src="../assets/images/photo19.jpg" alt="Événement 19">
-      <img src="../assets/images/photo20.jpg" alt="Événement 20">
-      <img src="../assets/images/photo21.jpg" alt="Événement 21">
-      <img src="../assets/images/photo22.jpg" alt="Événement 22">
-      <img src="../assets/images/photo23.jpg" alt="Événement 23">
-      <img src="../assets/images/photo24.jpg" alt="Événement 24">
-      <img src="../assets/images/photo25.jpg" alt="Événement 25">
-      <img src="../assets/images/photo26.jpg" alt="Événement 26">
-      <img src="../assets/images/photo27.jpg" alt="Événement 27">
-      <img src="../assets/images/photo28.jpg" alt="Événement 28">
-      <img src="../assets/images/photo29.jpg" alt="Événement 29">
-      <img src="../assets/images/photo30.jpg" alt="Événement 30">
+    <p>Discover our past events — click on each one to learn more!</p>
+
+    <div class="past-events">
+    
+      <!-- Card 1 -->
+      <div class="past-card" onclick="openModal('potloaka2')">
+        <div class="card-title">Pot-Loaka</div>
+        <div class="card-date">November 29, 2025</div>
+      </div>
+
+      <div id="modal-potloaka2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('potloaka2')">&times;</span>
+          <h3>Pot-Loaka — November 29, 2025</h3>
+          <p>A warm evening sharing homemade Malagasy dishes, along with fun group competitions.</p>
+          <!-- images unchanged -->
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="past-card" onclick="openModal('fihavanana')">
+        <div class="card-title">Fihavanana</div>
+        <div class="card-date">October 24, 2025</div>
+      </div>
+
+      <div id="modal-fihavanana" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('fihavanana')">&times;</span>
+          <h3>Fihavanana — October 24, 2025</h3>
+          <p>A simple midterm break to unwind with a relaxed atmosphere, conversations, games, and shared laughter.</p>
+          <!-- images unchanged -->
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="past-card" onclick="openModal('AG')">
+        <div class="card-title">General Assembly</div>
+        <div class="card-date">September 6, 2025</div>
+      </div>
+
+      <div id="modal-AG" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('AG')">&times;</span>
+          <h3>General Assembly</h3>
+          <p>A great gathering to present the annual report, discuss upcoming projects, and elect the new executive committee.</p>
+          <!-- images unchanged -->
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="past-card" onclick="openModal('ArtSaramanitra')">
+        <div class="card-title">Art-Saramanitra</div>
+        <div class="card-date">June 27, 2025</div>
+      </div>
+
+      <div id="modal-ArtSaramanitra" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('ArtSaramanitra')">&times;</span>
+          <h3>Art-Saramanitra — June 27, 2025</h3>
+          <p>A historic moment: 120 young Malagasy gathered for the first time in Canada to celebrate the 65th anniversary of our independence — an inspiring collective milestone. Made possible thanks to the collaboration between AMU and MALOU (Malagasy at uOttawa).</p>
+          <!-- images unchanged -->
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="past-card" onclick="openModal('defis')">
+        <div class="card-title">Sports Challenge</div>
+        <div class="card-date">May 10, 2025</div>
+      </div>
+
+      <div id="modal-defis" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('defis')">&times;</span>
+          <h3>Sports Challenge — May 10, 2025</h3>
+          <p>In collaboration with STK Filadelfia, our first inter-community meetup brought our two communities together through strong partnerships, warm exchanges, and meaningful support for Malagasy youth — all around a friendly sports competition.</p>
+          <!-- images unchanged -->
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="past-card" onclick="openModal('degustation')">
+        <div class="card-title">Tasting & Challenges</div>
+        <div class="card-date">March 22, 2025</div>
+      </div>
+
+      <div id="modal-degustation" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('degustation')">&times;</span>
+          <h3>Tasting & Challenges — March 22, 2025</h3>
+          <p>A beautiful new friendship: ALUDEM (the Lebanese Students Association of UdeM) and AMU brought two cultures together in a vibrant moment of solidarity, warmth, and shared enthusiasm.</p>
+          <!-- images unchanged -->
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="past-card" onclick="openModal('potloaka1')">
+        <div class="card-title">Pot-Loaka</div>
+        <div class="card-date">February 8, 2025</div>
+      </div>
+
+      <div id="modal-potloaka1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('potloaka1')">&times;</span>
+          <h3>Pot-Loaka — February 8, 2025</h3>
+          <p>For the very first time as an officially recognized association, we gathered for a Pot-Loaka that has now become a tradition — shared dishes, laughter, stories, and a collective warmth that defines us.</p>
+          <!-- images unchanged -->
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Association des Malagasy de l'UdeM | Website by Iangola Andrianarison
-      <a href="contact-en.html">Contact</a> | 
-      <a href="https://www.instagram.com/amu.udem/" target="_blank" rel="noopener noreferrer">Instagram</a> · 
-      <a href="https://www.linkedin.com/company/association-des-malagasy-de-l-udem" target="_blank" rel="noopener noreferrer">LinkedIn</a> · 
-      <a href="https://www.facebook.com/profile.php?id=61564464208745" target="_blank" rel="noopener noreferrer">Facebook</a>
-    </p>
-  </footer>
-
-  <script>
-let lastScroll = 0;
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-    const current = window.pageYOffset;
-
-    if (current > lastScroll) {
-        header.style.transform = "translateY(-100%)";
-    } else {
-        header.style.transform = "translateY(0)";
-    }
-
-    lastScroll = current;
-});
-</script>
-  
+  <script src="../js/evenements.js"></script>
 </body>
 </html>
