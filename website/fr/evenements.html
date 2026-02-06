@@ -30,18 +30,7 @@
 
     <h2>Prochains événements</h2>
     <ul>
-      <li style="margin-bottom: 14px; line-height: 1.6;">
-        <strong>Sortie au Mont-Tremblant :</strong> 27 décembre 2025
-        <div style="margin-top: 6px;">
-          <span style="opacity: 0.85;">Pour vous inscrire, c’est ici :</span>
-          <a href="https://www.zeffy.com/fr-CA/ticketing/sortie-village-mont-tremblant" 
-             target="_blank" 
-             style="color:#002d62; font-weight:600; text-decoration:none;">
-            ➤ Lien d'inscription
-          </a>
-        </div>
-      </li>
-      <li><strong>Mondial de foot:</strong> Janvier 2026</li>
+      <li><strong>Mondial de foot:</strong> 21 mars 2026</li>
 
     
     </li>
@@ -60,7 +49,26 @@
     <h2>Événements passés</h2>
     <p>Partez à la découverte de nos événements passés — cliquez pour en savoir plus !</p>
     <div class="past-events">
-    
+
+      <!-- Carte 1 -->
+      <div class="past-card" onclick="openModal('monttremblant2')">
+        <div class="card-title">Sortie au Mont-Tremblant</div>
+        <div class="card-date">27 décembre 2025</div>
+      </div>
+      <!-- Popup 1 -->
+      <div id="monttremblant" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('monttremblant')">&times;</span>
+          <h3>Sortie au Mont-Tremblant</h3>
+          <p>...</p>
+          <img src="../assets/images/27DEC2025/photo01.JPG" alt="01" class="modal-img">
+          <img src="../assets/images/27DEC2025/photo02.JPG" alt="01" class="modal-img">
+          <img src="../assets/images/27DEC2025/photo03.JPG" alt="01" class="modal-img">
+        </div>
+      </div>
+
+
+      
       <!-- Carte 1 -->
       <div class="past-card" onclick="openModal('potloaka2')">
         <div class="card-title">Pot-Loaka</div>
