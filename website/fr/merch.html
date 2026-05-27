@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merch - AMU</title>
+
+  <link rel="stylesheet" href="../css/merch.css">
+  <link rel="icon" href="../assets/AMULOGO.png" type="image/png">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="../assets/AMULOGOV.png" alt="AMU Logo" class="logo-img">
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="equipe.html">Équipe</a></li>
+      <li><a href="ressources.html">Ressources</a></li>
+      <li><a href="evenements.html">Événements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="merch.html" class="active">Merch</a></li>
+    </ul>
+
+    <div class="lang">
+      <a href="../en/merch.html">🇬🇧 EN</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="merch-section">
+    <h1>Notre Hoodie AMU</h1>
+    <p class="merch-intro">
+      Représente la communauté avec confort et style ✨
+    </p>
+
+    <div class="merch-card">
+      <div class="merch-img">
+        <img src="../assets/images/merch/hoodie.jpg" alt="Hoodie AMU">
+      </div>
+
+      <div class="merch-info">
+        <h2>Hoodie AMU</h2>
+        <p>
+          Un hoodie confortable et minimaliste, parfait pour le quotidien.
+          Idéal pour représenter l’AMU avec élégance.
+        </p>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdG3b07vUJp3C5WBSEI_W-WG7V1G_hoUy_IbApRjshmstAnA/viewform"
+           target="_blank"
+           class="merch-btn">
+          Commande maintenant
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>
+    © 2025 Association des Malagasy de l'UdeM | Site web par Iangola Andrianarison
+    <a href="contact.html">Contact</a> |
+    <a href="https://www.instagram.com/amu.udem/" target="_blank">Instagram</a> ·
+    <a href="https://www.linkedin.com/company/association-des-malagasy-de-l-udem" target="_blank">LinkedIn</a> ·
+    <a href="https://www.facebook.com/profile.php?id=61564464208745" target="_blank">Facebook</a>
+  </p>
+</footer>
+
+<script>
+let lastScroll = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  const current = window.pageYOffset;
+
+  if (current > lastScroll) {
+    header.style.transform = "translateY(-100%)";
+  } else {
+    header.style.transform = "translateY(0)";
+  }
+
+  lastScroll = current;
+});
+</script>
+
+</body>
+</html>

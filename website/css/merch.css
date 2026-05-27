@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --- Palette & variables --- */
+:root {
+    --main-beige: #FFF4EC;
+    --card-beige: #FFF8F1;
+    --soft-red: #61060e; /*  #B52435; */
+    --soft-green: #2dcd40; /*  #2F4A32; */
+    --udem-blue: #002d62;
+}
+
+/* --- Global styles --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--main-beige);
+    color: #222;
+    line-height: 1.6;
+}
+
+/* --- Navbar --- */
+header {
+    background-color: var(--main-beige);
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+/* Menu */
+nav .menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: var(--udem-blue);
+    font-weight: 500;
+    position: relative;
+    padding: 6px 0;
+    transition: color 0.3s;
+}
+
+nav .menu li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--soft-red);
+    transition: width 0.3s ease;
+}
+nav .menu li a:hover::after,
+nav .menu li a.active::after {
+    width: 100%;
+}
+
+nav .menu li a:hover,
+nav .menu li a.active {
+    color: var(--soft-red);
+}
+
+/* Language button */
+nav .lang a {
+    display: inline-block; 
+    padding: 6px 14px;
+    border-radius: 6px;
+    background-color: var(--udem-blue);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+nav .lang a:hover {
+    background-color: var(--soft-red);
+    transform: translateY(-2px);
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    nav .lang {
+        margin-top: 12px;
+    }
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* BODY */
+  body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+  }
+  
+  /* SECTION */
+  .merch-section {
+    padding: 100px 10%;
+    text-align: center;
+  }
+  
+  .merch-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .merch-intro {
+    opacity: 0.75;
+    margin-bottom: 60px;
+  }
+  
+  /* CARD */
+  .merch-card {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+    transition: 0.3s;
+  }
+  
+  .merch-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  /* IMAGE */
+  .merch-img {
+    width: 50%;
+  }
+  
+  .merch-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* TEXT */
+  .merch-info {
+    width: 50%;
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .merch-info h2 {
+    font-size: 1.8rem;
+  }
+  
+  .merch-info p {
+    opacity: 0.8;
+    line-height: 1.6;
+  }
+  
+  /* BUTTON */
+  .merch-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #002d62;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+    width: fit-content;
+  }
+  
+  .merch-btn:hover {
+    background: #001d42;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .merch-card {
+      flex-direction: column;
+    }
+  
+    .merch-img,
+    .merch-info {
+      width: 100%;
+    }
+  
+    .merch-img img {
+      height: 280px;
+    }
+  
+    .merch-info {
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--main-beige);
+    color: var(--soft-green);
+    font-size: 0.95em;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+footer a {
+    color: var(--soft-red);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
